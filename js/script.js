@@ -40,26 +40,26 @@ let progressjs = setInterval(() => {
   }
 }, jsspeed);
 
-// php progress circular bar 
-let phpProgress = document.querySelector(".php"),
-  phpValue = document.querySelector(".php-progress");
+// Python progress circular bar 
+let PythonProgress = document.querySelector(".Python"),
+  PythonValue = document.querySelector(".Python-progress");
 
-let phpStartValue = 0,
-  phpEndValue = 80,
-  phpspeed = 30;
+let PythonStartValue = 0,
+  PythonEndValue = 80,
+  Pythonspeed = 30;
 
-let progressphp = setInterval(() => {
-  phpStartValue++;
+let progressPython = setInterval(() => {
+  PythonStartValue++;
 
-  phpValue.textContent = `${phpStartValue}%`;
-  phpProgress.style.background = `conic-gradient(#20c997 ${
-    phpStartValue * 3.6
+  PythonValue.textContent = `${PythonStartValue}%`;
+  PythonProgress.style.background = `conic-gradient(#20c997 ${
+    PythonStartValue * 3.6
   }deg, #ededed 0deg)`;
 
-  if (phpStartValue == phpEndValue) {
-    clearInterval(progressphp);
+  if (PythonStartValue == PythonEndValue) {
+    clearInterval(progressPython);
   }
-}, phpspeed);
+}, Pythonspeed);
 
 // UI/UX progress circular bar 
 let reactProgress = document.querySelector(".UIUX"),
